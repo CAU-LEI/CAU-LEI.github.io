@@ -7,7 +7,7 @@
   --mark: #3aa0d0;
   --white: #fbfaf6;
   --max: 1080px;
-  --rail: 220px;
+  --rail: 240px;
 }
 
 * {
@@ -66,18 +66,33 @@ img {
   position: sticky;
   top: 0;
   height: 100vh;
-  padding: 36px 28px;
+  padding: 0;
   border-right: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-  gap: 24px;
   background: var(--paper);
 }
 
-.mark {
-  width: 50px;
-  height: 50px;
+.portrait-link {
   display: block;
+}
+
+.portrait {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 939 / 1024;
+  object-fit: cover;
+  object-position: center top;
+  background: #fff;
+}
+
+.rail-body {
+  padding: 20px 22px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-height: 0;
 }
 
 .rail-name {
@@ -142,21 +157,6 @@ nav a.is-active {
 main {
   padding: 56px 64px 80px;
   max-width: calc(var(--max) + 128px);
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
-  gap: 40px;
-  align-items: start;
-}
-
-.portrait {
-  width: 210px;
-  height: 230px;
-  object-fit: cover;
-  object-position: center top;
-  background: #fff;
 }
 
 .kicker {
@@ -393,8 +393,18 @@ html[lang="zh"] [data-en] {
     height: auto;
     border-right: 0;
     border-bottom: 1px solid var(--line);
-    padding: 24px 24px 20px;
-    gap: 18px;
+  }
+
+  .portrait {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    aspect-ratio: 939 / 1024;
+  }
+
+  .rail-body {
+    padding: 18px 24px 20px;
+    gap: 16px;
   }
 
   nav {
@@ -411,16 +421,10 @@ html[lang="zh"] [data-en] {
     padding: 36px 24px 56px;
   }
 
-  .hero,
   .research,
   .cv-item,
   .work-item {
     grid-template-columns: 1fr;
-  }
-
-  .portrait {
-    width: 160px;
-    height: 176px;
   }
 
   .contact {

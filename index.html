@@ -23,15 +23,16 @@
     <a class="skip" href="#about">Skip to content</a>
     <div class="page" id="about">
       <aside class="rail">
-        <a href="#about" aria-label="Lei Wei">
-          <svg class="mark" viewBox="0 0 5 5" aria-hidden="true">
-            <rect width="5" height="5" fill="#e8eaed" />
-            <rect x="0" y="0" width="1" height="1" fill="#3aa0d0" />
-            <rect x="4" y="0" width="1" height="1" fill="#3aa0d0" />
-            <rect x="0" y="3" width="1" height="2" fill="#3aa0d0" />
-            <rect x="4" y="3" width="1" height="2" fill="#3aa0d0" />
-          </svg>
+        <a class="portrait-link" href="#about" aria-label="Lei Wei">
+          <img
+            class="portrait"
+            src="images/portrait.jpg"
+            width="240"
+            height="262"
+            alt="Lei Wei"
+          />
         </a>
+        <div class="rail-body">
         <div>
           <div class="rail-name">
             <span data-en>Lei Wei</span>
@@ -54,37 +55,27 @@
           <span aria-hidden="true">/</span>
           <button type="button" data-lang="zh" aria-pressed="false">中文</button>
         </div>
+        </div>
       </aside>
 
       <main>
-        <header class="hero">
-          <img
-            class="portrait"
-            src="images/portrait.jpg"
-            width="210"
-            height="230"
-            alt="Lei Wei"
-          />
-          <div>
-            <p class="kicker">AI for Science</p>
-            <h1>
-              <span data-en>Lei Wei</span>
-              <span data-zh>卫雷</span>
-            </h1>
-            <p class="lede">
-              <span data-en
-                >Lei Wei is jointly trained at China Agricultural University and the University of Edinburgh. The work focuses on AI for Science: DNA language models, deep learning genomic prediction, and multi-omics foundation models. This includes architecture design for models that take genome, transcriptome, epigenome, and image data, plus machine-learning interpretability, with applications in biological breeding and medicine. The research has contributed to the National Science and Technology Major Project on Biological Breeding, the National Key R&amp;D Program, and related programs. More than ten SCI papers have been published, and more than ten national invention patents and software copyrights have been filed. Genomic prediction, intelligent image analysis, and multimodal breeding models developed in this work have been deployed at listed agricultural companies, supporting intelligent breeding and precision medicine.</span
-              >
-              <span data-zh
-                >卫雷，中国农业大学、爱丁堡大学联合培养。主要从事 AI for Science、DNA 大语言模型、深度学习基因组预测、多组学大模型等方向研究，重点围绕基因组、转录组、表观组、图像等多组学开展语言模型的架构设计、开发与机器学习可解释性方法研发，并探索人工智能大模型在生物育种与医学领域的应用。参与生物育种国家科技重大专项、国家重点研发计划、“十四五”重点研发专项等科研项目。已在 SCI 期刊发表论文十余篇，申请国家发明专利及软件著作权十余项。负责研发的基因组预测、图像智能分析及多模态一体化育种模型已在多家农业上市企业落地应用，为智能育种与精准医学提供技术支撑。</span
-              >
-            </p>
-            <p class="meta">
-              <span data-en>China Agricultural University · University of Edinburgh</span>
-              <span data-zh>中国农业大学 · 爱丁堡大学</span>
-              <a href="https://github.com/CAU-LEI">GitHub @CAU-LEI</a>
-            </p>
-          </div>
+        <header>
+          <p class="kicker">AI for Science</p>
+          <h1>
+            <span data-en>Lei Wei</span>
+            <span data-zh>卫雷</span>
+          </h1>
+          <p class="lede">
+            <span data-en
+              >The work focuses on AI for Science: DNA language models, deep learning genomic prediction, and multi-omics foundation models. This includes architecture design for models that take genome, transcriptome, epigenome, and image data, plus machine-learning interpretability, with applications in biological breeding and medicine. The research has contributed to the National Science and Technology Major Project on Biological Breeding, the National Key R&amp;D Program, and related programs. More than ten SCI papers have been published, and more than ten national invention patents and software copyrights have been filed. Genomic prediction, intelligent image analysis, and multimodal breeding models developed in this work have been deployed at listed agricultural companies, supporting intelligent breeding and precision medicine.</span
+            >
+            <span data-zh
+              >主要从事 AI for Science、DNA 大语言模型、深度学习基因组预测、多组学大模型等方向研究，重点围绕基因组、转录组、表观组、图像等多组学开展语言模型的架构设计、开发与机器学习可解释性方法研发，并探索人工智能大模型在生物育种与医学领域的应用。参与生物育种国家科技重大专项、国家重点研发计划、“十四五”重点研发专项等科研项目。已在 SCI 期刊发表论文十余篇，申请国家发明专利及软件著作权十余项。负责研发的基因组预测、图像智能分析及多模态一体化育种模型已在多家农业上市企业落地应用，为智能育种与精准医学提供技术支撑。</span
+            >
+          </p>
+          <p class="meta">
+            <a href="https://github.com/CAU-LEI">GitHub @CAU-LEI</a>
+          </p>
         </header>
 
         <section id="research">
@@ -150,19 +141,6 @@
             <span data-en>II. Educational Background</span>
             <span data-zh>II. 教育经历</span>
           </h2>
-          <article class="cv-item">
-            <div class="when">2021–2026</div>
-            <div>
-              <h3>
-                <span data-en>China Agricultural University</span>
-                <span data-zh>中国农业大学</span>
-              </h3>
-              <p>
-                <span data-en>Doctoral study</span>
-                <span data-zh>博士研究生</span>
-              </p>
-            </div>
-          </article>
           <article class="cv-item">
             <div class="when">2024–2025</div>
             <div>
@@ -318,25 +296,6 @@
             <p class="authors">Zhu S, Yan Y, Wei L, Li Y, Mao T, Dai X, Du R.</p>
             <p class="cite">Biomedical Signal Processing and Control. 2024; 97: 106704.</p>
           </a>
-
-          <a class="paper" href="https://doi.org/10.3969/j.issn.1000-0844.2021.04.807">
-            <div class="journal">
-              <span data-en>China Earthquake Engineering Journal · 2021</span>
-              <span data-zh>地震工程学报 · 2021</span>
-            </div>
-            <div class="ptitle">
-              <span data-en>Retrospective analysis of geoelectric field anomalies before the Yangbi MS 6.4 earthquake in Yunnan Province</span>
-              <span data-zh>云南漾濞县 6.4 级地震前地电场异常回溯性分析</span>
-            </div>
-            <p class="authors">
-              <span data-en>Hou Z, An Z, Fan Y, Fu A, Tan D, Wei L.</span>
-              <span data-zh>侯泽宇, 安张辉, 范莹莹, 付阿龙, 谭大诚, 卫雷.</span>
-            </p>
-            <p class="cite">
-              <span data-en>China Earthquake Engineering Journal. 2021; 43(4): 807–817.</span>
-              <span data-zh>地震工程学报. 2021; 43(4): 807–817.</span>
-            </p>
-          </a>
         </section>
 
         <section id="industry">
@@ -407,13 +366,6 @@
             <div>
               <dt><span data-en>Homepage</span><span data-zh>主页</span></dt>
               <dd><a href="https://cau-lei.github.io/">cau-lei.github.io</a></dd>
-            </div>
-            <div>
-              <dt><span data-en>Affiliation</span><span data-zh>单位</span></dt>
-              <dd>
-                <span data-en>China Agricultural University</span>
-                <span data-zh>中国农业大学</span>
-              </dd>
             </div>
           </dl>
         </section>
