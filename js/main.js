@@ -10,9 +10,7 @@
       btn.setAttribute("aria-pressed", String(btn.getAttribute("data-lang") === lang));
     });
     document.title =
-      lang === "zh"
-        ? "Lei Wei · 中国农业大学"
-        : "Lei Wei · China Agricultural University";
+      lang === "zh" ? "卫雷 · AI for Science" : "Lei Wei · AI for Science";
   }
 
   setLang(start);

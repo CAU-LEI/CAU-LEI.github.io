@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lei Wei · China Agricultural University</title>
+    <title>Lei Wei · AI for Science</title>
     <meta
       name="description"
-      content="Lei Wei is an AI Ph.D. researcher at China Agricultural University working on interpretable genomic prediction and livestock phenotyping."
+      content="Lei Wei works on AI for Science, DNA language models, deep learning genomic prediction, and multi-omics models for breeding and medicine."
     />
-    <meta property="og:title" content="Lei Wei" />
+    <meta property="og:title" content="Lei Wei · AI for Science" />
     <meta
       property="og:description"
-      content="AI for genomic prediction and intelligent phenotyping. China Agricultural University."
+      content="AI for Science: DNA language models, genomic prediction, and multi-omics models."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cau-lei.github.io/" />
+    <meta property="og:image" content="https://cau-lei.github.io/images/portrait.jpg" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -32,16 +33,20 @@
           </svg>
         </a>
         <div>
-          <div class="rail-name">Lei Wei</div>
-          <p class="rail-role">
-            <span data-en>AI Ph.D. · CAU</span>
-            <span data-zh>人工智能博士生 · 中国农业大学</span>
-          </p>
+          <div class="rail-name">
+            <span data-en>Lei Wei</span>
+            <span data-zh>卫雷</span>
+          </div>
+          <p class="rail-role">AI for Science</p>
         </div>
         <nav>
           <a href="#about"><span data-en>About</span><span data-zh>简介</span></a>
           <a href="#research"><span data-en>Research</span><span data-zh>研究</span></a>
-          <a href="#work"><span data-en>Work</span><span data-zh>工作</span></a>
+          <a href="#education"><span data-en>Education</span><span data-zh>教育</span></a>
+          <a href="#experience"><span data-en>Experience</span><span data-zh>经历</span></a>
+          <a href="#projects"><span data-en>Projects</span><span data-zh>项目</span></a>
+          <a href="#papers"><span data-en>Papers</span><span data-zh>论文</span></a>
+          <a href="#industry"><span data-en>Industry</span><span data-zh>贡献</span></a>
           <a href="#contact"><span data-en>Contact</span><span data-zh>联系</span></a>
         </nav>
         <div class="lang" role="group" aria-label="Language">
@@ -52,154 +57,344 @@
       </aside>
 
       <main>
-        <header>
-          <p class="kicker">
-            <span data-en>China Agricultural University</span>
-            <span data-zh>中国农业大学</span>
-          </p>
-          <h1>Lei Wei</h1>
-          <p class="lede">
-            <span data-en
-              >I build interpretable artificial intelligence for genomic prediction and livestock phenotyping, with software that can move from model screening to locus-level explanation.</span
-            >
-            <span data-zh
-              >我做可解释的人工智能基因组预测与畜禽智能表型，并把它做成能从模型筛选走到位点解释的软件与工作流。</span
-            >
-          </p>
-          <p class="meta">
-            <span data-en>National Key Laboratory of Animal and Poultry Breeding</span>
-            <span data-zh>畜禽生物育种全国重点实验室</span>
-            <a href="https://github.com/CAU-LEI">GitHub @CAU-LEI</a>
-          </p>
+        <header class="hero">
+          <img
+            class="portrait"
+            src="images/portrait.jpg"
+            width="210"
+            height="230"
+            alt="Lei Wei"
+          />
+          <div>
+            <p class="kicker">AI for Science</p>
+            <h1>
+              <span data-en>Lei Wei</span>
+              <span data-zh>卫雷</span>
+            </h1>
+            <p class="lede">
+              <span data-en
+                >Lei Wei is jointly trained at China Agricultural University and the University of Edinburgh. The work focuses on AI for Science: DNA language models, deep learning genomic prediction, and multi-omics foundation models. This includes architecture design for models that take genome, transcriptome, epigenome, and image data, plus machine-learning interpretability, with applications in biological breeding and medicine. The research has contributed to the National Science and Technology Major Project on Biological Breeding, the National Key R&amp;D Program, and related programs. More than ten SCI papers have been published, and more than ten national invention patents and software copyrights have been filed. Genomic prediction, intelligent image analysis, and multimodal breeding models developed in this work have been deployed at listed agricultural companies, supporting intelligent breeding and precision medicine.</span
+              >
+              <span data-zh
+                >卫雷，中国农业大学、爱丁堡大学联合培养。主要从事 AI for Science、DNA 大语言模型、深度学习基因组预测、多组学大模型等方向研究，重点围绕基因组、转录组、表观组、图像等多组学开展语言模型的架构设计、开发与机器学习可解释性方法研发，并探索人工智能大模型在生物育种与医学领域的应用。参与生物育种国家科技重大专项、国家重点研发计划、“十四五”重点研发专项等科研项目。已在 SCI 期刊发表论文十余篇，申请国家发明专利及软件著作权十余项。负责研发的基因组预测、图像智能分析及多模态一体化育种模型已在多家农业上市企业落地应用，为智能育种与精准医学提供技术支撑。</span
+              >
+            </p>
+            <p class="meta">
+              <span data-en>China Agricultural University · University of Edinburgh</span>
+              <span data-zh>中国农业大学 · 爱丁堡大学</span>
+              <a href="https://github.com/CAU-LEI">GitHub @CAU-LEI</a>
+            </p>
+          </div>
         </header>
 
         <section id="research">
-          <h2><span data-en>Research</span><span data-zh>研究</span></h2>
-
+          <h2>
+            <span data-en>I. Research Interest</span>
+            <span data-zh>I. 研究方向</span>
+          </h2>
           <article class="research">
             <div class="idx">01</div>
             <div>
               <h3>
-                <span data-en>Interpretable genomic prediction</span>
-                <span data-zh>可解释基因组预测</span>
+                <span data-en>Genomic and variant foundation models</span>
+                <span data-zh>基因组大模型，变异数据大模型</span>
               </h3>
               <p>
                 <span data-en
-                  >AIGP is an AI breeding pipeline for feature selection, model building, acceleration, hyperparameter search, covariate handling, and SNP interpretability with SHAP. It covers regression and classification on genomic, transcriptomic, and related tabular omics data.</span
+                  >Language-model architectures for DNA and variant data, aimed at long-context genomic understanding and downstream prediction.</span
                 >
                 <span data-zh
-                  >AIGP 是一套人工智能育种流程，覆盖特征选择、建模、加速、参数搜索、协变量处理，以及基于 SHAP 的 SNP 可解释分析。它同时支持回归与分类，可用于基因组、转录组及相关组学表格数据。</span
+                  >面向 DNA 与变异数据的语言模型架构，服务长上下文基因组理解与下游预测。</span
                 >
               </p>
             </div>
           </article>
-
           <article class="research">
             <div class="idx">02</div>
             <div>
               <h3>
-                <span data-en>Intelligent livestock phenotyping</span>
-                <span data-zh>畜禽智能表型</span>
+                <span data-en>Deep learning phenotype prediction and multi-omics models</span>
+                <span data-zh>深度学习表型预测与多组学模型</span>
               </h3>
               <p>
                 <span data-en
-                  >Deep segmentation and prediction for animal image and CT phenotypes, including Chicken-Mamba for testis analysis and a subcutaneous-fat pipeline from image enhancement to segmentation to trait prediction.</span
+                  >Deep models for phenotype prediction, and multimodal systems that combine genomics, transcriptomics, and epigenomics.</span
                 >
                 <span data-zh
-                  >面向畜禽图像与 CT 表型的深度分割与预测，包括用于睾丸分析的 Chicken-Mamba，以及皮下脂肪从图像增强、分割到性状预测的完整流程。</span
+                  >深度学习表型预测，以及基因组学、转录组学、表观组学多模态模型开发。</span
                 >
               </p>
             </div>
           </article>
-
           <article class="research">
             <div class="idx">03</div>
             <div>
               <h3>
-                <span data-en>Sequence models for genotype data</span>
-                <span data-zh>基因型序列模型</span>
+                <span data-en>Multi-omics breeding, medical models, and interpretability</span>
+                <span data-zh>多组学育种、医学大模型与可解释性</span>
               </h3>
               <p>
                 <span data-en
-                  >Transformer-style models for genotype sequences, plus conversational tooling that turns AIGP into a checkable analysis skill: inspect inputs, choose a defensible validation design, run models, and explain outputs.</span
+                  >Applications in biological breeding and medicine, with model interpretability that can move from prediction to locus-level explanation.</span
                 >
                 <span data-zh
-                  >面向基因型序列的 Transformer 类模型，以及把 AIGP 做成可核查分析技能的对话工具：检查输入、确定验证设计、运行模型并解释结果。</span
+                  >多组学育种与医学大模型，以及从预测走到位点解释的模型可解释性方法。</span
                 >
               </p>
             </div>
           </article>
         </section>
 
-        <section id="work">
-          <h2><span data-en>Selected work</span><span data-zh>代表工作</span></h2>
+        <section id="education">
+          <h2>
+            <span data-en>II. Educational Background</span>
+            <span data-zh>II. 教育经历</span>
+          </h2>
+          <article class="cv-item">
+            <div class="when">2021–2026</div>
+            <div>
+              <h3>
+                <span data-en>China Agricultural University</span>
+                <span data-zh>中国农业大学</span>
+              </h3>
+              <p>
+                <span data-en>Doctoral study</span>
+                <span data-zh>博士研究生</span>
+              </p>
+            </div>
+          </article>
+          <article class="cv-item">
+            <div class="when">2024–2025</div>
+            <div>
+              <h3>
+                <span data-en>University of Edinburgh</span>
+                <span data-zh>爱丁堡大学</span>
+              </h3>
+              <p>
+                <span data-en>Joint doctoral training</span>
+                <span data-zh>联合培养</span>
+              </p>
+            </div>
+          </article>
+          <article class="cv-item">
+            <div class="when">2018–2021</div>
+            <div>
+              <h3>
+                <span data-en>University of Chinese Academy of Sciences</span>
+                <span data-zh>中国科学院大学</span>
+              </h3>
+              <p>
+                <span data-en>Master's degree · Lanzhou Institute of Seismology, CEA</span>
+                <span data-zh>硕士 · 中国地震局兰州地震研究所</span>
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section id="experience">
+          <h2>
+            <span data-en>III. Work Experience</span>
+            <span data-zh>III. 工作经历</span>
+          </h2>
+          <article class="cv-item">
+            <div class="when">2025.06–2025.08</div>
+            <div>
+              <h3>
+                <span data-en>BioMap (Beijing) Intelligent Technology Co., Ltd.</span>
+                <span data-zh>百图生科（北京）智能技术有限公司</span>
+              </h3>
+              <p>
+                <span data-en>Algorithm intern</span>
+                <span data-zh>算法实习生</span>
+              </p>
+            </div>
+          </article>
+          <article class="cv-item">
+            <div class="when">2023.06–2023.08</div>
+            <div>
+              <h3>
+                <span data-en>The Chinese University of Hong Kong</span>
+                <span data-zh>香港中文大学</span>
+              </h3>
+              <p>
+                <span data-en>Research assistant · State Key Laboratory of Agrobiotechnology</span>
+                <span data-zh>研究助理 · 农业生物技术全国重点实验室</span>
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section id="projects">
+          <h2>
+            <span data-en>IV. Research Projects</span>
+            <span data-zh>IV. 承担科研项目</span>
+          </h2>
+          <article class="cv-item">
+            <div class="when">2026–2028</div>
+            <div>
+              <h3>
+                <span data-en>Breeding technology based on DNA language models</span>
+                <span data-zh>基于 DNA 语言模型的育种技术研发</span>
+              </h3>
+              <p>
+                <span data-en>National Key R&amp;D Program · Participant</span>
+                <span data-zh>国家重点研发项目 · 参与</span>
+              </p>
+            </div>
+          </article>
+          <article class="cv-item">
+            <div class="when">2023–2025</div>
+            <div>
+              <h3>
+                <span data-en>Genomic selection, mating, and breeding technology system</span>
+                <span data-zh>基因组选种选配及育种技术体系</span>
+              </h3>
+              <p>
+                <span data-en>National Science and Technology Major Project on Biological Breeding · Participant</span>
+                <span data-zh>农业生物育种重大项目 · 参与</span>
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section id="papers">
+          <h2>
+            <span data-en>V. Publications</span>
+            <span data-zh>V. 学术论文</span>
+          </h2>
+
+          <a class="paper" href="https://doi.org/10.1101/gr.281006.125">
+            <div class="journal">Genome Research · 2026</div>
+            <div class="ptitle">Automated interpretable artificial intelligence genomic prediction with AIGP</div>
+            <p class="authors">Wei L, Jiang Z, Fan B, Yan Y, Xu Z, Hu X, Wang Y.</p>
+            <p class="cite">Genome Research. 2026; 36(4): 814–826.</p>
+          </a>
+
+          <a class="paper" href="https://doi.org/10.1016/j.fufo.2026.101129">
+            <div class="journal">Future Foods · 2026</div>
+            <div class="ptitle">Deep learning-based prediction of subcutaneous fat content for meat quality assessment</div>
+            <p class="authors">Wei L#, Yan Y#, Yu K, Jiang Z, Xu Z, Zhang D, Wang Y, Zhang R, Wu H, Hu X.</p>
+            <p class="cite">Future Foods. 2026; 14: 101129.</p>
+          </a>
+
+          <a class="paper" href="https://doi.org/10.1186/s40104-026-01479-8">
+            <div class="journal">Journal of Animal Science and Biotechnology · 2026</div>
+            <div class="ptitle">High-throughput in vivo phenotyping of chicken carcass traits based on digital radiographic imaging</div>
+            <p class="authors">Yan Y#, Wei L#, Zhou Y, Tian R, Sun Y, Zhang Y, Liu Y, Luo P, Yu K, Wang Y, Wu H, Hu X.</p>
+            <p class="cite">Journal of Animal Science and Biotechnology. 2026; 17(1): 153.</p>
+          </a>
+
+          <a class="paper" href="https://doi.org/10.1016/j.bspc.2025.109421">
+            <div class="journal">Biomedical Signal Processing and Control · 2026</div>
+            <div class="ptitle">MAHFNet: A multi-attention hierarchical fusion network for ultrasound image segmentation</div>
+            <p class="authors">Zhu S, Wei L, Li Y, Yuan X, Wang C, Mao T, Dai X, Yan Y, Chen J.</p>
+            <p class="cite">Biomedical Signal Processing and Control. 2026; 115: 109421.</p>
+          </a>
+
+          <a class="paper" href="https://doi.org/10.1109/JBHI.2025.3578625">
+            <div class="journal">IEEE Journal of Biomedical and Health Informatics · 2025</div>
+            <div class="ptitle">A multi-resolution hybrid CNN-transformer network with scale-guided attention for medical image segmentation</div>
+            <p class="authors">Zhu S, Li Y, Dai X, Mao T, Wei L#, Yan Y.</p>
+            <p class="cite">IEEE Journal of Biomedical and Health Informatics. 2025; 29(11): 8385–8394.</p>
+          </a>
+
+          <a class="paper" href="https://doi.org/10.1016/j.psj.2024.103477">
+            <div class="journal">Poultry Science · 2024</div>
+            <div class="ptitle">Nondestructive estimation method of live chicken leg weight based on deep learning</div>
+            <p class="authors">Sun S, Wei L, Chen Z, Chai Y, Wang S, Sun R.</p>
+            <p class="cite">Poultry Science. 2024; 103(4): 103477.</p>
+          </a>
+
+          <a class="paper" href="https://doi.org/10.1038/s41421-023-00645-w">
+            <div class="journal">Cell Discovery · 2024</div>
+            <div class="ptitle">Hypercompact TnpB and truncated TnpB systems enable efficient genome editing in vitro and in vivo</div>
+            <p class="authors">Wang M, Sun Z, Liu Y, Yin P, Liang C, Tan L, Wei L, Wang Y, Yu H, Zhu Y, Hu X, Li N, Zhang R.</p>
+            <p class="cite">Cell Discovery. 2024; 10: 31.</p>
+          </a>
+
+          <a class="paper" href="https://doi.org/10.1016/j.bspc.2024.106704">
+            <div class="journal">Biomedical Signal Processing and Control · 2024</div>
+            <div class="ptitle">SECA-Net: Squeezed-and-excitated contextual attention network for medical image segmentation</div>
+            <p class="authors">Zhu S, Yan Y, Wei L, Li Y, Mao T, Dai X, Du R.</p>
+            <p class="cite">Biomedical Signal Processing and Control. 2024; 97: 106704.</p>
+          </a>
+
+          <a class="paper" href="https://doi.org/10.3969/j.issn.1000-0844.2021.04.807">
+            <div class="journal">
+              <span data-en>China Earthquake Engineering Journal · 2021</span>
+              <span data-zh>地震工程学报 · 2021</span>
+            </div>
+            <div class="ptitle">
+              <span data-en>Retrospective analysis of geoelectric field anomalies before the Yangbi MS 6.4 earthquake in Yunnan Province</span>
+              <span data-zh>云南漾濞县 6.4 级地震前地电场异常回溯性分析</span>
+            </div>
+            <p class="authors">
+              <span data-en>Hou Z, An Z, Fan Y, Fu A, Tan D, Wei L.</span>
+              <span data-zh>侯泽宇, 安张辉, 范莹莹, 付阿龙, 谭大诚, 卫雷.</span>
+            </p>
+            <p class="cite">
+              <span data-en>China Earthquake Engineering Journal. 2021; 43(4): 807–817.</span>
+              <span data-zh>地震工程学报. 2021; 43(4): 807–817.</span>
+            </p>
+          </a>
+        </section>
+
+        <section id="industry">
+          <h2>
+            <span data-en>VIII. Industry Contributions</span>
+            <span data-zh>VIII. 行业贡献</span>
+          </h2>
+          <p class="note">
+            <span data-en
+              >The work covers genomic prediction, intelligent image analysis, and an integrated breeding model, including genomic selection, image segmentation, phenotype prediction, and breeding software. The pipeline runs from data collection and analysis to breeding decision support, and has been deployed at listed agricultural companies including Wen's Group and Sunner Group. It is used in livestock phenotyping, genetic evaluation, and precision selection, to raise the efficiency of breeding data processing and intelligent decision-making.</span
+            >
+            <span data-zh
+              >负责研发的基因组预测、图像智能分析与一体化智能育种模型，涵盖基因组选择、图像分割、表型预测、育种软件平台开发等。相关技术已形成从数据采集、智能分析到育种决策支持的完整技术链，并在温氏集团、圣农集团等农业上市企业实现落地应用，服务于畜禽表型测定、遗传评估与精准选育等实际生产环节，提升了育种数据处理效率和智能化决策水平，推动人工智能技术在生物育种中的产业化应用。</span
+            >
+          </p>
+
           <div class="work">
             <a class="work-item" href="https://github.com/CAU-LEI/AIGP_soft">
               <div class="year">2025</div>
               <div>
                 <h3>AIGP_soft</h3>
                 <p>
-                  <span data-en
-                    >Public software for interpretable AI genomic prediction, with Linux/macOS command-line and Windows GUI builds.</span
-                  >
-                  <span data-zh
-                    >可解释人工智能基因组预测的公开软件，提供 Linux/macOS 命令行与 Windows 图形界面版本。</span
-                  >
+                  <span data-en>Public software for interpretable AI genomic prediction.</span>
+                  <span data-zh>可解释人工智能基因组预测软件。</span>
                 </p>
               </div>
               <div class="tag">Python</div>
             </a>
-
             <a class="work-item" href="https://github.com/CAU-LEI/aigp-skill">
               <div class="year">2026</div>
               <div>
                 <h3>aigp-skill</h3>
                 <p>
-                  <span data-en
-                    >A Codex skill that turns the AIGP workflow into a conversational, inspectable genomic-prediction pipeline.</span
-                  >
-                  <span data-zh
-                    >把 AIGP 工作流做成可对话、可检查的基因组预测技能。</span
-                  >
+                  <span data-en>Conversational genomic-prediction workflow built on AIGP.</span>
+                  <span data-zh>基于 AIGP 的可对话基因组预测工作流。</span>
                 </p>
               </div>
               <div class="tag">Python</div>
             </a>
-
             <a class="work-item" href="https://github.com/CAU-LEI/Chicken-Mamba">
               <div class="year">2025</div>
               <div>
                 <h3>Chicken-Mamba</h3>
                 <p>
-                  <span data-en
-                    >AI phenotyping pipeline for chicken testis analysis: VMUNet segmentation, ConvGRU prediction, and a desktop GUI.</span
-                  >
-                  <span data-zh
-                    >鸡睾丸智能表型流程：VMUNet 分割、ConvGRU 预测，以及桌面图形界面。</span
-                  >
+                  <span data-en>AI phenotyping pipeline for chicken testis analysis.</span>
+                  <span data-zh>鸡睾丸智能表型分析流程。</span>
                 </p>
               </div>
               <div class="tag">Python</div>
-            </a>
-
-            <a class="work-item" href="https://github.com/CAU-LEI/AIGP.github.io">
-              <div class="year">2024</div>
-              <div>
-                <h3>AIGP Manual</h3>
-                <p>
-                  <span data-en
-                    >Software manual, test data, and usage notes for the AIGP framework.</span
-                  >
-                  <span data-zh>AIGP 框架的软件手册、测试数据与使用说明。</span>
-                </p>
-              </div>
-              <div class="tag">Docs</div>
             </a>
           </div>
         </section>
 
         <section id="contact">
-          <h2><span data-en>Contact</span><span data-zh>联系</span></h2>
+          <h2>
+            <span data-en>Contact</span>
+            <span data-zh>联系</span>
+          </h2>
           <dl class="contact">
             <div>
               <dt>Email</dt>
@@ -210,26 +405,18 @@
               <dd><a href="https://github.com/CAU-LEI">github.com/CAU-LEI</a></dd>
             </div>
             <div>
+              <dt><span data-en>Homepage</span><span data-zh>主页</span></dt>
+              <dd><a href="https://cau-lei.github.io/">cau-lei.github.io</a></dd>
+            </div>
+            <div>
               <dt><span data-en>Affiliation</span><span data-zh>单位</span></dt>
               <dd>
                 <span data-en>China Agricultural University</span>
                 <span data-zh>中国农业大学</span>
               </dd>
             </div>
-            <div>
-              <dt><span data-en>Software</span><span data-zh>软件</span></dt>
-              <dd>
-                <span data-en>Academic use. Commercial use requires prior contact.</span>
-                <span data-zh>软件仅供学术使用，商业使用请事先联系。</span>
-              </dd>
-            </div>
           </dl>
         </section>
-
-        <p class="foot">
-          <span data-en>Built from public GitHub work by CAU-LEI.</span>
-          <span data-zh>根据 CAU-LEI 的公开 GitHub 工作整理。</span>
-        </p>
       </main>
     </div>
     <script src="js/main.js"></script>
